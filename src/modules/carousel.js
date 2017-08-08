@@ -10,7 +10,7 @@ const carousel = {
             items: 1,
             loop: true,
             autoplay: true,
-            stagePadding: 60,
+            stagePadding: 0,
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             autoplaySpeed: 1000,
