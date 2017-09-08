@@ -6,16 +6,21 @@ const animation = {
 		this.homepage();
 	},
 	homepage() {
-		Scrollmap.add('#about-section .sqs-row', {
-		    onTriggerIn() {
+		Scrollmap.trigger({
+			target: '#about-section .sqs-row',
+			surfaceVisible: 0.5
+			}, (element) => {
 
 		    	//add any code to be triggered upon
 		    	//the element becoming visible
 
-		        $(this.element).addClass("visible");
-		    },
-		    surfaceVisible: 0.5
-		});		
+		        $(element).addClass("visible");
+		});
+
+		Scrollmap.trigger({
+			target: '#collection-59a877bbb8a79b3789fa88cd .index-section',
+			surfaceVisible: 0.6
+		});
 	}
 };
 

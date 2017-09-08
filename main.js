@@ -12,8 +12,6 @@ class Site_Build {
 		this.carousel = carousel;
 
 		this.runModules();
-
-		console.log(this);
 	}
 	runModules() {
 		carousel.init();
